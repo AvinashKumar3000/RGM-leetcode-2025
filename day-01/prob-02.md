@@ -1,19 +1,20 @@
 # solution LC_485
 
 ```c
-int findMaxConsecutiveOnes(int* nums, int numsSize) {
-    int c = 0;
-    int max = 0;
+int findMaxConsecutiveOnes( int* nums, int numsSize ) {
+    int max = 0; 
+    int count = 0;
     for(int i=0; i<numsSize; i++) {
-        if(nums[i]==1) c++;
-        else{
-            if(c > max) 
-                max = c;
-            c = 0;
+        if(nums[i]==1)
+            count++;
+        else {
+            if ( count > max )
+                max = count;
+            count = 0;
         }
-    } 
-    if(c>max) 
-        max = c;
+    }
+    if(count > max)
+        max = count
     return max;
 }
 ```
