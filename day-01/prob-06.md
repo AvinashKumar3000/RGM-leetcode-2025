@@ -23,3 +23,30 @@ int* decompressRLElist(int* nums, int numsSize, int* returnSize) {
    	return ans;
 }
 ```
+
+## solution 2
+
+```c
+int* decompressRLElist(
+	int* nums, 
+	int numsSize, int* returnSize
+) {
+   int n = 0;
+   for(int i=0; i<numsSize/2; i++) {
+   	 int freq = nums[2*i];
+   	 n = n + freq;
+   }
+   int* ans = (int*) calloc( n, sizeof(int));
+   int k = 0;
+   for(int i =0; i<numsSize/2 ; i++) {
+   		int freq = nums[2*i];
+   		int val  = nums[2*i+1];
+   		for(int j=0; j<freq	; j++) {
+   			ans[k++] = val;
+   		}
+   }
+
+   *returnSize = n;
+   return ans;
+}
+```
