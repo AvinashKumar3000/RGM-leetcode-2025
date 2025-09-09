@@ -1,4 +1,4 @@
-# solution 
+# solution LC_1470
 
 ```c
 /**
