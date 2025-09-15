@@ -12,3 +12,7 @@ total: 20
 2 : day 5
 
 30 prob
+
+# python reference notes:
+
+- [python notes link 👇 ](https://github.com/AvinashKumar3000/complete-python-notes/)
