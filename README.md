@@ -15,4 +15,6 @@ total: 20
 
 # python reference notes:
 
-- [python notes link 👇 ](https://github.com/AvinashKumar3000/complete-python-notes/)
+- [python notes link  👇  ](https://github.com/AvinashKumar3000/complete-python-notes/)
+- [python DSA  link   👇  ](https://github.com/AvinashKumar3000/python-DS)
+- [python other notes 👇  ](https://github.com/AvinashKumar3000/python-Karpagam-2024)
