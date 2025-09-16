@@ -1,16 +1,23 @@
 # solution LC_2367
 
 ```c
-  int countTriples(int n) {
-    int count = 0;
-    for(int a=1; a<=n; a++) {
-    	for(int b=1; b<=n; b++) {
-    		for(int c=1; c<=n; c++) {
-    			if( a*a + b*b == c*c )
-    				count++;
-    		}
-    	}	
-    }
-    return count;
+int arithmeticTriplets(
+	int* nums, 
+	int numsSize, 
+	int diff
+) {
+	int count = 0;
+	int n = numsSize;
+	for(int i=0; i<n; i++){ 
+        for(int j=i+1; j<n; j++){ 
+            for(int k=j+1; k<n; k++){
+                if(
+                   nums[j]-nums[i] == diff &&
+                   nums[k]-nums[j] == diff
+                ) count++;
+            }
+        }
+    } 
+	return count; 
 }
 ```
