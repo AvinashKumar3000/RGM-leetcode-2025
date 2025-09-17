@@ -1,5 +1,35 @@
 # solution LC_566 reshape matrix
 
+```python
+class Solution:
+    def matrixReshape(self, mat, r, c):
+      m = len(mat)
+      n = len(mat[0])
+      if m*n != r*c:
+        return mat
+      temp = [0] * (m*n)
+      k = 0
+      for i in range(m):
+        for j in range(n):
+          temp[k] = mat[i][j]
+          k+=1
+        
+      ans = [0] * r
+      for i in range(r):
+        row = [0] * c
+        ans[i] = row
+      k = 0
+      for i in range(r):
+        for j in range(c):
+          ans[i][j] = temp[k]
+          k+=1
+
+      return ans
+      
+
+```
+
+
 ```c
 
 /**
@@ -57,3 +87,5 @@ int** matrixReshape(
     return ans;
 }
 ```
+
+
