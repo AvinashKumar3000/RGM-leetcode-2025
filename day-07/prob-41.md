@@ -22,3 +22,26 @@ int* twoSum(
   return ans;
 }
 ```
+
+```c    
+int* twoSum(
+  int* nums,
+  int numsSize,
+  int target, 
+  int* returnSize
+) {
+  static int ans[2];
+  *returnSize = 2;
+  int n = numsSize;
+  for(int i=0; i<n; i++) {
+    for(int j=i+1; j<n; j++) {
+       if ( nums[i] + nums[j] == target ) {
+        ans[0] = i;
+        ans[1] = j;
+        return ans;
+       }
+    }
+  }
+  return ans;
+}
+```
