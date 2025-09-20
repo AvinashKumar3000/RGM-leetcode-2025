@@ -1,4 +1,4 @@
-# solution 1
+# solution 1 LC_344  reverse string
 
 ## simple and using extra array ( temp )
 
