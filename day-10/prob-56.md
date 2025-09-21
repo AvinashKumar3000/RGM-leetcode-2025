@@ -2,7 +2,7 @@
 
 ## 242. Valid Anagram
 
-```c    
+```c
 bool isAnagram(char* s, char* t) {
  	int freq[26];
  	int n1 = strlen(s);

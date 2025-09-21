@@ -2,7 +2,7 @@
 
 ## 345. Reverse Vowels of a String
 
-```c    
+```c   
 bool isVowel(char ch){
   char vowels[] = "aeiouAEIOU";
   int n = strlen(vowels);
