@@ -5,4 +5,4 @@
 60. LC_771  jewels and stones
 61. LC_383  Ransom Note
 62. LC_374  Guess Number Higher or Lower
-63. LC_278  First Bad Version 
+63. LC_278  First Bad Version. 
